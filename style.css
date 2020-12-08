@@ -90,7 +90,6 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: crimson;
 }
 .navbar .max-width{
     display: flex;
@@ -133,7 +132,7 @@ section .title::after{
     color: #fff;
     font-size: 23px;
     cursor: pointer;
-    /* display: none; */
+    display: none;
 }
 .scroll-up-btn{
     position: fixed;
@@ -276,12 +275,10 @@ section .title::after{
     color:#fff;
     background: #111;
 }
-.services .title::before,
-.teams .title::before{
+.services .title::before{
     background: #fff;
 }
-.services .title::after,
-.teams .title::after{
+.services .title::after{
     background: #111;
     content: "What i have done";
 }
@@ -296,7 +293,7 @@ section .title::after{
 }
 .services .serv-content .card a{
     display: inline-block;
-    background: crimson;
+    background: black;
     color: #fff;
     font-size: 20px;
     padding: 0.5px 5px;
@@ -307,7 +304,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: crimson;
+    background: white;
 }
 .services .serv-content .card .box1{
     transition: all 0.3s ease;
@@ -664,3 +661,49 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+@media (max-width: 320px) {
+    .home .home-div .home-content{
+        width:100%;
+        margin-top: 60px;
+        background: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 20px 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .home-img{
+        display: none;
+    }
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    
+    .about .about-content .right .text,
+    .skills .skills-content .left .text{
+        font-size: 19px;
+    }
+    .services .title::after{
+        background: #111;
+        content: "Worked On";
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+}
+
